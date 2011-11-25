@@ -28,3 +28,24 @@
 		margin-left: 0;
 	}
 }
+
+// Clear the container
+// From Skeleton - https://github.com/dhgamache/Skeleton
+.container:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+// Clear class for use with br tags
+// Also from Skeleton
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
