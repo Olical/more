@@ -1,6 +1,5 @@
 // This is a adjustable grid system
 // By overwriting the variables below you can customise it however you want
-// Column width is equal to - X * width / columns + X * gutter width
 @grid-columns: 16;
 @grid-gutter-width: 20;
 @grid-width: 960;
@@ -10,6 +9,11 @@
 	width: @grid-width + 0px;
 	margin-left: auto;
 	margin-right: auto;
+	
+	// Function for generating the column width
+	.column-width(@column) {
+		width: @column * @grid-width / @grid-columns - @grid-gutter-width + (@column - 1) * @grid-gutter-width + 0px;
+	}
 	
 	// Column class, used on all column widths
 	.columns, .columns {
@@ -26,6 +30,11 @@
 	
 	.column.omega, .columns.omega {
 		margin-left: 0;
+	}
+	
+	// Columns
+	.one.column {
+		.column-width(1);
 	}
 }
 
