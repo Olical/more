@@ -15,6 +15,11 @@
 		width: @column * (@grid-width / @grid-columns - @grid-gutter-width) + (@column - 1) * @grid-gutter-width + 0px;
 	}
 	
+	// Function for generating the prepended space
+	.column-prepend-padding(@column) {
+		padding-left: @column * (@grid-width / @grid-columns - @grid-gutter-width) + (@column - 1) * @grid-gutter-width + 20px;
+	}
+	
 	// Column class, used on all column widths
 	.columns, .columns {
 		float: left;
@@ -95,6 +100,71 @@
 	
 	.sixteen.columns {
 		.column-width(16);
+	}
+	
+	// Prepends
+	.prepend-with-one {
+		.column-prepend-padding(1);
+	}
+	
+	.prepend-with-two {
+		.column-prepend-padding(2);
+	}
+	
+	.prepend-with-three {
+		.column-prepend-padding(3);
+	}
+	
+	.prepend-with-four {
+		.column-prepend-padding(4);
+	}
+	
+	.prepend-with-five {
+		.column-prepend-padding(5);
+	}
+	
+	.prepend-with-six {
+		.column-prepend-padding(6);
+	}
+	
+	.prepend-with-seven {
+		.column-prepend-padding(7);
+	}
+	
+	.prepend-with-eight {
+		.column-prepend-padding(8);
+	}
+	
+	.prepend-with-nine {
+		.column-prepend-padding(9);
+	}
+	
+	.prepend-with-ten {
+		.column-prepend-padding(10);
+	}
+	
+	.prepend-with-eleven {
+		.column-prepend-padding(11);
+	}
+	
+	.prepend-with-twelve {
+		.column-prepend-padding(12);
+	}
+	
+	.prepend-with-thirteen {
+		.column-prepend-padding(13);
+	}
+	
+	.prepend-with-fourteen {
+		.column-prepend-padding(14);
+	}
+	
+	.prepend-with-fifteen {
+		.column-prepend-padding(15);
+	}
+	
+	.prepend-with-sixteen {
+		.column-prepend-padding(16);
 	}
 }
 
