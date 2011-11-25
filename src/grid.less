@@ -12,7 +12,7 @@
 	
 	// Function for generating the column width
 	.column-width(@column) {
-		width: @column * @grid-width / @grid-columns - @grid-gutter-width + (@column - 1) * @grid-gutter-width + 0px;
+		width: @column * (@grid-width / @grid-columns - @grid-gutter-width) + (@column - 1) * @grid-gutter-width + 0px;
 	}
 	
 	// Column class, used on all column widths
