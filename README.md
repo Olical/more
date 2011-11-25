@@ -6,7 +6,7 @@ The normalisation is provided by [normalize.css](https://github.com/necolas/norm
 
 The clearing is from [Skeleton](https://github.com/dhgamache/Skeleton), an amazing responsive grid system. The is also where the syntax is inspired from.
 
-## Loading more
+## Loading
 
 You can either import the core file, which will load the other source files or you can load up the plain compiled CSS version as you would any other framework. Both examples presume that the framework is located in the `more` directory, next to the file you are including it with.
 
