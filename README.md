@@ -72,7 +72,7 @@ Play about with it until you find something you like. I personally prefer a sixt
 
 ## Using the mixins
 
-Some people call them functions, some call them mixins. I don't care, they do the job of a function and mixin properties. More adds quite a few mixins under the `#more` package to aid you with a lot of your tasks. Namely CSS3 vendor prefixes and IE compatability. Because lets be honest, no one ever wants to write `filter: dropshadow(...);` but you have to because Microsoft said so. So just let more do the work for you.
+Some people call them functions, some call them mixins. I don't care, they do the job of a function and mixin properties. More adds quite a few mixins under the `#more` package to aid you with a lot of your tasks. Namely CSS3 vendor prefixes and IE compatibility. Because lets be honest, no one ever wants to write `filter: dropshadow(...);` but you have to because Microsoft said so. So just let more do the work for you.
 
 To find the full list please open up `src/helpers.less` or `src/vendors.less`, but I am going to show you how to use them. Say you wanted your button to have rounded corners, you can use the following mixin.
 
@@ -82,7 +82,7 @@ To find the full list please open up `src/helpers.less` or `src/vendors.less`, b
 
 You see how we access the mixin, via `#more`. This acts as a namespace to stop it messing with any of your current mixins. Clever eh.
 
-As well as vendor prefixers more includes a few helpers, one of my favorite ones is `.circle`. It turns your element into a perfect circle! I bet you thought that kind of thing was difficult, well it is, but let more worry about that, you just get on with your styling.
+As well as vendor prefixes more includes a few helpers, one of my favorite ones is `.circle`. It turns your element into a perfect circle! I bet you thought that kind of thing was difficult, well it is, but let more worry about that, you just get on with your styling.
 
 	div.profile-picture {
 		#more .circle(50px); // 50px is the size of our circle (width and height)
