@@ -20,7 +20,7 @@ Using the compiled CSS:
 
 ## Customisation
 
-The beauty of this is that only the helper module depends on the vendor menu, the rest are completely seperate. So you can either include all of them via the core file or individual files so you can leave what you don't need. Say you only wanted the grid for example, you would use the following line.
+The beauty of this is that only the helper module depends on the vendor menu, the rest are completely separate. So you can either include all of them via the core file or individual files so you can leave what you don't need. Say you only wanted the grid for example, you would use the following line.
 
     @import 'more/src/grid';
 
