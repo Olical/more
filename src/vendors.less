@@ -3,44 +3,44 @@
 //     div { #more > .border-radius(5px); }
 
 #more {
-	.border-radius(@args) {
+	.border-radius(@args: none) {
 		-webkit-border-radius: @args;
 		-moz-border-radius: @args;
 		border-radius: @args;
 	}
 	
-	.box-shadow(@args) {
+	.box-shadow(@args: none) {
 		-webkit-box-shadow: @args;
 		-moz-box-shadow: @args;
 		box-shadow: @args;
 	}
 	
-	.column-count(@args) {
+	.column-count(@args: none) {
 		-moz-column-count: @args;
 		-webkit-column-count: @args;
 		column-count: @args;
 	}
 	
-	.column-gap(@args) {
+	.column-gap(@args: none) {
 		-moz-column-gap: @args;
 		-webkit-column-gap: @args;
 		column-gap: @args;
 	}
 	
-	.box-sizing(@args) {
+	.box-sizing(@args: none) {
 		-moz-box-sizing: @args;
 		-webkit-box-sizing: @args;
 		box-sizing: @args;
 	}
 	
-	.transition(@args) {
+	.transition(@args: none) {
 		-webkit-transition: @args;
 		-moz-transition: @args;
 		-o-transition: @args;
 		transition: @args;
 	}
 	
-	.transform(@args) {
+	.transform(@args: none) {
 		-moz-transform: @args;
 		-webkit-transform: @args;
 		-ms-transform: @args;
@@ -48,7 +48,7 @@
 	}
 	
 	// This opacity mixin is also cross browser
-	.opacity(@opacity) {
+	.opacity(@opacity: 1) {
 		@msOpacity: @opacity * 100;
 		
 		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@{msOpacity})";
