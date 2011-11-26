@@ -46,6 +46,30 @@ You then place your columns within the container specifying how wide they are, h
 
 For more in depth syntax examples check out the `test` directory. There are a lot of different things being used in there.
 
+## Configuring the grid
+
+Now this is my favorite thing about more's grid, you can customise it however you want. Heres how.
+
+Just after you include more, you can specify three variables as configuration. Here they are with their default values, so if you don't set them it will be as if you wrote this.
+
+	@import 'more/more';
+	
+	@grid-columns: 16;
+	@grid-gutter-width: 20;
+	@grid-width: 960;
+
+Now, you can change these to whatever you want. I don't know about you, but I have never seen a grid system that can do that!
+
+	// Load the more framework
+	@import 'more/more';
+	
+	// Configure the grid
+	@grid-columns: 12;
+	@grid-width: 1024;
+	@grid-gutter-width: 50;
+
+Play about with it until you find something you like. I personally prefer a sixteen column grid, that's why it defaults to it.
+
 ## Customisation
 
 The beauty of this is that only the helper module depends on the vendor menu, the rest are completely separate. So you can either include all of them via the core file or individual files so you can leave what you don't need. Say you only wanted the grid for example, you would use the following line.
