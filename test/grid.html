@@ -9,13 +9,9 @@
 			}
 			
 			.column, .columns {
-				background-color: #999999;
+				background-color: rgba(100, 100, 100, 0.2);
 				color: #FFFFFF;
 				border-bottom: 1px solid #666666;
-			}
-			
-			.column.parent, .columns.parent {
-				background-color: #AAAAAA;
 			}
 			
 			p {
@@ -106,9 +102,11 @@
 			<div class='sixteen columns'><p>Sixteen</p></div>
 			
 			<!-- Nesting -->
-			<div class='sixteen columns parent'>
-				<div class='eight columns alpha'><p>Eight</p></div>
-				<div class='eight columns omega'><p>Eight</p></div>
+			<div class='sixteen columns'>
+				<p>Sixteen - parent</p>
+				
+				<div class='eight columns alpha'><p>Eight - alpha</p></div>
+				<div class='eight columns omega'><p>Eight - omega</p></div>
 			</div>
 		</div>
 		
