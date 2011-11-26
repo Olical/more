@@ -15,4 +15,13 @@
 		text-shadow: @horizontal @vertical @blur @color;
 		filter: ~`'dropshadow(color=@{color}, offx=@{horizontal}, offy=@{vertical})'`;
 	}
+	
+	// Turns your element into a circle
+	.circle(@size: 0) {
+		@radius: ~`parseInt('@{size}', 10) / 2 + 'px'`;
+		
+		width: @size;
+		height: @size;
+		#more > .border-radius(@radius);
+	}
 }
