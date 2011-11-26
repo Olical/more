@@ -2,9 +2,9 @@
 
 More is a framework for [LESS](http://lesscss.org/), which is a dynamic stylesheet language that builds on CSS. More contains bucket loads of useful code to provide things such as normalisation and a adjustable grid system.
 
-The normalisation is provided by [normalize.css](https://github.com/necolas/normalize.css). An amazing stylesheet. I admire the developers behind it. All I did to normalize was convert the comments and layout of the syntax and use LESS style syntax where I could.
+The normalisation is provided by [normalize.css](https://github.com/necolas/normalize.css). An amazing stylesheet. I admire the developers behind it. All I did to normalize was convert the comments and layout of the syntax and use LESS style syntax where ever I could.
 
-The clearing is from [Skeleton](https://github.com/dhgamache/Skeleton), an amazing responsive grid system. The is also where the syntax is inspired from.
+The clear fix is from [Skeleton](https://github.com/dhgamache/Skeleton), an amazing responsive grid system. This is also where the grid the syntax is inspired from.
 
 ## Loading
 
