@@ -44,6 +44,8 @@ You then place your columns within the container specifying how wide they are, h
 		<p>This does not need alpha or omega because it is a direct child of the container.</p>
 	</div>
 
+For more in depth syntax examples check out the `test` directory. There are a lot of different things being used in there.
+
 ## Customisation
 
 The beauty of this is that only the helper module depends on the vendor menu, the rest are completely separate. So you can either include all of them via the core file or individual files so you can leave what you don't need. Say you only wanted the grid for example, you would use the following line.
