@@ -12,11 +12,11 @@ You can either import the core file, which will load the other source files or y
 
 Using the import statement into another LESS file:
 
-    @import 'more/more';
+	@import 'more/more';
 
 Using the compiled CSS:
 
-    <link rel='stylesheet' type='text/css' href='more/more.min.css' />
+	<link rel='stylesheet' type='text/css' href='more/more.min.css' />
 
 ## Using the grid
 
@@ -26,7 +26,7 @@ The grid works just like any other, [960](http://960.gs/) for example. And like 
 
 The beauty of this is that only the helper module depends on the vendor menu, the rest are completely separate. So you can either include all of them via the core file or individual files so you can leave what you don't need. Say you only wanted the grid for example, you would use the following line.
 
-    @import 'more/src/grid';
+	@import 'more/src/grid';
 
 ## Building
 
