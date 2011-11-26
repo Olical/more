@@ -14,6 +14,10 @@
 				border-bottom: 1px solid #666666;
 			}
 			
+			.column.parent, .columns.parent {
+				background-color: #AAAAAA;
+			}
+			
 			p {
 				text-align: center;
 			}
@@ -100,6 +104,12 @@
 			<div class='one column'><p>One</p></div>
 			
 			<div class='sixteen columns'><p>Sixteen</p></div>
+			
+			<!-- Nesting -->
+			<div class='sixteen columns parent'>
+				<div class='eight columns alpha'><p>Eight</p></div>
+				<div class='eight columns omega'><p>Eight</p></div>
+			</div>
 		</div>
 		
 		<script type='text/javascript' src='less.min.js'></script>
