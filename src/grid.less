@@ -17,11 +17,11 @@
 	
 	// Function for generating the append and prepend margins
 	.column-prepend(@column) {
-		margin-left: @column * (@grid-width / @grid-columns - @grid-gutter-width) + (@column - 1) * @grid-gutter-width + @grid-gutter-width + 0px;
+		padding-left: @column * (@grid-width / @grid-columns - @grid-gutter-width) + (@column - 1) * @grid-gutter-width + @grid-gutter-width + 0px;
 	}
 	
 	.column-append(@column) {
-		margin-right: @column * (@grid-width / @grid-columns - @grid-gutter-width) + (@column - 1) * @grid-gutter-width + @grid-gutter-width + 0px;
+		padding-right: @column * (@grid-width / @grid-columns - @grid-gutter-width) + (@column - 1) * @grid-gutter-width + @grid-gutter-width + 0px;
 	}
 	
 	// Column class, used on all column widths
