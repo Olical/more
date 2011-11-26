@@ -26,9 +26,9 @@ The beauty of this is that only the helper module depends on the vendor menu, th
 
 ## Building
 
-You do this as you would any other LESS script, with `lessc`. I have written a quick makefile to run it for you, so all you have to do is run `make`. Providing you have [make](http://www.gnu.org/s/make/), [node.js](http://nodejs.org/), [lessc](https://github.com/cloudhead/less.js) and [clean-css](https://github.com/GoalSmashers/clean-css) installed that is. I would use [npm](http://npmjs.org/) for that (`npm install less -g`). Or you can use less.js to compile in your browser, what ever works best for you.
+You do this as you would any other LESS script, with `lessc`. I have written a quick makefile to run it for you, so all you have to do is run `make`. Providing you have [make](http://www.gnu.org/s/make/), [node.js](http://nodejs.org/), [lessc](https://github.com/cloudhead/less.js) and [clean-css](https://github.com/GoalSmashers/clean-css) installed. I would use [npm](http://npmjs.org/) for that (`npm install less -g; npm install clean-css -g`). Or you can use less.js to compile in your browser, what ever works best for you.
 
-Once compiled you can even include it in normal CSS projects, it does not have to be written in LESS to use it.
+Once compiled you can even include it in normal CSS projects, it does not have to be written in LESS to use it. You can find a pre compiled version in `more.min.css`.
 
 ## Author
 
