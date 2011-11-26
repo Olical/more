@@ -4,9 +4,15 @@
 
 #more {
 	// Transparent background with fallback
-	// Takes a hex colour and an alpha value
+	// Only works with a hex colour
 	.alpha-background(@color: #000000, @alpha: 1) {
 		background: @color;
 		background: hsla(hue(@color), saturation(@color), lightness(@color), @alpha);
+	}
+	
+	// Text shadow with fallback
+	.text-shadow(@horizontal: 0, @vertical: 0, @blur: 0, @color: #000000) {
+		text-shadow: @horizontal @vertical @blur @color;
+		filter: ~`'dropshadow(color=@{color}, offx=@{horizontal}, offy=@{vertical})'`;
 	}
 }
