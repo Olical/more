@@ -47,9 +47,14 @@
 		transform: @args;
 	}
 	
-	.opacity(@args) {
-		-moz-opacity: @args;
-		-khtml-opacity: @args;
-		opacity: @args;
+	// This opacity mixin is also cross browser
+	.opacity(@opacity) {
+		@msOpacity: @opacity * 100;
+		
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@{msOpacity})";
+		filter: alpha(opacity=@msOpacity);
+		-moz-opacity: @opacity;
+		-khtml-opacity: @opacity;
+		opacity: @opacity;
 	}
 }
