@@ -18,6 +18,10 @@ Using the compiled CSS:
 
     <link rel='stylesheet' type='text/css' href='more/more.min.css' />
 
+## Using the grid
+
+The grid works just like any other, [960](http://960.gs/) for example. And like the other grid systems you need to specify a container.
+
 ## Customisation
 
 The beauty of this is that only the helper module depends on the vendor menu, the rest are completely separate. So you can either include all of them via the core file or individual files so you can leave what you don't need. Say you only wanted the grid for example, you would use the following line.
