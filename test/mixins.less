@@ -24,6 +24,10 @@ div.test {
 		text-align: center;
 		padding: 10px;
 	}
+	
+	p.small {
+		font-size: 0.5em;
+	}
 }
 
 // Vendor prefix tests
@@ -33,4 +37,13 @@ div.test {
 
 #box-shadow {
 	#more > .box-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
+}
+
+#column-count {
+	#more > .column-count(2);
+}
+
+#column-gap {
+	#more > .column-count(2);
+	#more > .column-gap(50px);
 }
