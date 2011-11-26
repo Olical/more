@@ -22,6 +22,28 @@ Using the compiled CSS:
 
 The grid works just like any other, [960](http://960.gs/) for example. And like the other grid systems you need to specify a container.
 
+	<div class='container'>
+		
+	</div>
+
+You then place your columns within the container specifying how wide they are, how much to prepend or append with and whether they should be flush with one of the sides.
+
+	<div class='four columns prepend-with-one'>
+		<p>This is the parent column.</p>
+		
+		<div class='two columns alpha'>
+			<p>And this is a child.</p>
+		</div>
+		
+		<div class='two columns omega'>
+			<p>Columns that are nested within another column require alpha and omega on the first and last ones. If they are direct children of the container you do not need to apply alpha or omega.</p>
+		</div>
+	</div>
+	
+	<div class='one column append-width-two'>
+		<p>This does not need alpha or omega because it is a direct child of the container.</p>
+	</div>
+
 ## Customisation
 
 The beauty of this is that only the helper module depends on the vendor menu, the rest are completely separate. So you can either include all of them via the core file or individual files so you can leave what you don't need. Say you only wanted the grid for example, you would use the following line.
