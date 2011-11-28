@@ -58,7 +58,7 @@ Just after you include more, you can specify three variables as configuration. H
 	@grid-gutter-width: 20;
 	@grid-width: 960;
 
-Now, you can change these to whatever you want. I don't know about you, but I have never seen a grid system that can do that!
+Now, you can change these to whatever you want with one limitation, the maximum amount of columns is 16. Any smaller and there is not much point in using a grid. I don't know about you, but I have never seen a grid system that can do that!
 
 	// Load the more framework
 	@import 'more/more';
