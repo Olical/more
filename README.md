@@ -28,20 +28,20 @@ The grid works just like any other, [960](http://960.gs/) for example. And like 
 
 You then place your columns within the container specifying how wide they are, how much to prepend or append with and whether they should be flush with one of the sides.
 
-	<div class='four columns prepend-with-one'>
+	<div class='span-4 prepend-1'>
 		<p>This is the parent column.</p>
 		
-		<div class='two columns alpha'>
+		<div class='span-2 first'>
 			<p>And this is a child.</p>
 		</div>
 		
-		<div class='two columns omega'>
-			<p>Columns that are nested within another column require alpha and omega on the first and last ones. If they are direct children of the container you do not need to apply alpha or omega.</p>
+		<div class='span-2 last'>
+			<p>Columns that are nested within another column require first and last classes on the first and last ones. If they are direct children of the container you do not need to apply them.</p>
 		</div>
 	</div>
 	
-	<div class='one column append-width-two'>
-		<p>This does not need alpha or omega because it is a direct child of the container.</p>
+	<div class='span-1 append-2'>
+		<p>This does not need first or last because it is a direct child of the container.</p>
 	</div>
 
 For more in depth syntax examples check out the `test` directory. There are a lot of different things being used in there.
@@ -58,7 +58,7 @@ Just after you include more, you can specify three variables as configuration. H
 	@grid-gutter-width: 20;
 	@grid-width: 960;
 
-Now, you can change these to whatever you want. I don't know about you, but I have never seen a grid system that can do that!
+Now, you can change these to whatever you want with one limitation, the maximum amount of columns is 16. Any smaller and there is not much point in using a grid. I don't know about you, but I have never seen a grid system that can do that!
 
 	// Load the more framework
 	@import 'more/more';
