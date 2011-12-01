@@ -31,17 +31,17 @@ You then place your columns within the container specifying how wide they are, h
 	<div class='span-4 prepend-1'>
 		<p>This is the parent column.</p>
 		
-		<div class='span-2 first'>
+		<div class='span-2 alpha'>
 			<p>And this is a child.</p>
 		</div>
 		
-		<div class='span-2 last'>
-			<p>Columns that are nested within another column require first and last classes on the first and last ones. If they are direct children of the container you do not need to apply them.</p>
+		<div class='span-2 omega'>
+			<p>Columns that are nested within another column require alpha and omega classes on the first and last ones. If they are direct children of the container you do not need to apply them.</p>
 		</div>
 	</div>
 	
 	<div class='span-1 append-2'>
-		<p>This does not need first or last because it is a direct child of the container.</p>
+		<p>This does not need alpha or omega because it is a direct child of the container.</p>
 	</div>
 
 For more in depth syntax examples check out the `test` directory. There are a lot of different things being used in there.
