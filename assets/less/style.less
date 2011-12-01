@@ -1,14 +1,28 @@
 // Load more
 @import 'assets/less/more/more';
 
+// Specify colours
+@text-color: #5E5E5E;
+@link-color: #00AEF2;
+
 // Text
 body {
 	font-size: 16px;
 	font-family: 'Arvo', serif;
+	color: @text-color;
 }
 
 h1 {
 	font-family: 'The Girl Next Door', cursive, serif;
+}
+
+a {
+	color: @link-color;
+	#more .transition(color 500ms ease);
+}
+
+a:hover {
+	color: darken(@link-color, 20%);
 }
 
 // Main block level elements
