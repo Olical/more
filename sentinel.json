@@ -1,0 +1,12 @@
+{
+	"files": [
+		{
+			"path": "assets/less/style.less",
+			"output": "assets/css/style.min.css",
+			"processor": "less"
+		}
+	],
+	"processors": {
+		"less": "lessc {{path}} | cleancss -o {{output}}"
+	}
+}
