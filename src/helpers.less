@@ -10,12 +10,6 @@
 		background: hsla(hue(@color), saturation(@color), lightness(@color), @alpha);
 	}
 	
-	// Text shadow with fallback
-	.text-shadow(@horizontal: 0, @vertical: 0, @blur: 0, @color: #000000) {
-		text-shadow: @horizontal @vertical @blur @color;
-		filter: ~`'dropshadow(color=@{color}, offx=@{horizontal}, offy=@{vertical})'`;
-	}
-	
 	// Turns your element into a circle
 	.circle(@size: 0) {
 		@radius: ~`parseInt('@{size}', 10) / 2 + 'px'`;
