@@ -42,3 +42,27 @@ header {
 		margin: 0;
 	}
 }
+
+aside.navigation {
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		
+		a {
+			color: #FFFFFF;
+			text-decoration: none;
+			display: block;
+			padding: 5px;
+			margin: 10px 0;
+			background-color: darken(@link-color, 10%);
+			#more .transition(background 650ms ease);
+			#more .border-radius(6px);
+			text-align: center;
+		}
+		
+		a:hover {
+			background-color: darken(@link-color, 30%);
+		}
+	}
+}
