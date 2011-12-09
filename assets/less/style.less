@@ -56,13 +56,18 @@ aside.navigation {
 			padding: 5px;
 			margin: 10px 0;
 			background-color: darken(@link-color, 10%);
-			#more .transition(background 650ms ease);
+			#more .transition(all 650ms ease);
 			#more .border-radius(6px);
+			text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
 			text-align: center;
+			
+			span {
+				#more .opacity(0.6);
+			}
 		}
 		
 		a:hover {
-			background-color: darken(@link-color, 30%);
+			background-color: darken(@link-color, 20%);
 		}
 	}
 }
