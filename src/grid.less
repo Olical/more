@@ -9,224 +9,224 @@
 	width: @grid-width + 0px;
 	margin-left: auto;
 	margin-right: auto;
-	
-	// Function for generating the column width
-	.column-width(@column) {
-		width: @column * (@grid-width / @grid-columns - @grid-gutter-width) + (@column - 1) * @grid-gutter-width + 0px;
-	}
-	
-	// Function for generating the append and prepend margins
-	.column-prepend(@column) {
-		padding-left: @column * (@grid-width / @grid-columns - @grid-gutter-width) + (@column - 1) * @grid-gutter-width + @grid-gutter-width + 0px;
-	}
-	
-	.column-append(@column) {
-		padding-right: @column * (@grid-width / @grid-columns - @grid-gutter-width) + (@column - 1) * @grid-gutter-width + @grid-gutter-width + 0px;
-	}
-	
-	// Styles passed over all columns
-	.span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16 {
-		float: left;
-		display: inline;
-		margin-left: @grid-gutter-width / 2 + 0px;
-		margin-right: @grid-gutter-width / 2 + 0px;
-	}
-	
-	// Classes for removing the side margins for nested columns
-	.alpha {
-		margin-left: 0;
-	}
-	
-	.omega {
-		margin-right: 0;
-	}
-	
-	// Columns
-	.span-1 {
-		.column-width(1);
-	}
-	
-	.span-2 {
-		.column-width(2);
-	}
-	
-	.span-3 {
-		.column-width(3);
-	}
-	
-	.span-4 {
-		.column-width(4);
-	}
-	
-	.span-5 {
-		.column-width(5);
-	}
-	
-	.span-6 {
-		.column-width(6);
-	}
-	
-	.span-7 {
-		.column-width(7);
-	}
-	
-	.span-8 {
-		.column-width(8);
-	}
-	
-	.span-9 {
-		.column-width(9);
-	}
-	
-	.span-10 {
-		.column-width(10);
-	}
-	
-	.span-11 {
-		.column-width(11);
-	}
-	
-	.span-12 {
-		.column-width(12);
-	}
-	
-	.span-13 {
-		.column-width(13);
-	}
-	
-	.span-14 {
-		.column-width(14);
-	}
-	
-	.span-15 {
-		.column-width(15);
-	}
-	
-	.span-16 {
-		.column-width(16);
-	}
-	
-	// Prepends
-	.prepend-1 {
-		.column-prepend(1);
-	}
-	
-	.prepend-2 {
-		.column-prepend(2);
-	}
-	
-	.prepend-3 {
-		.column-prepend(3);
-	}
-	
-	.prepend-4 {
-		.column-prepend(4);
-	}
-	
-	.prepend-5 {
-		.column-prepend(5);
-	}
-	
-	.prepend-6 {
-		.column-prepend(6);
-	}
-	
-	.prepend-7 {
-		.column-prepend(7);
-	}
-	
-	.prepend-8 {
-		.column-prepend(8);
-	}
-	
-	.prepend-9 {
-		.column-prepend(9);
-	}
-	
-	.prepend-10 {
-		.column-prepend(10);
-	}
-	
-	.prepend-11 {
-		.column-prepend(11);
-	}
-	
-	.prepend-12 {
-		.column-prepend(12);
-	}
-	
-	.prepend-13 {
-		.column-prepend(13);
-	}
-	
-	.prepend-14 {
-		.column-prepend(14);
-	}
-	
-	.prepend-15 {
-		.column-prepend(15);
-	}
-	
-	// Appends
-	.append-1 {
-		.column-append(1);
-	}
-	
-	.append-2 {
-		.column-append(2);
-	}
-	
-	.append-3 {
-		.column-append(3);
-	}
-	
-	.append-4 {
-		.column-append(4);
-	}
-	
-	.append-5 {
-		.column-append(5);
-	}
-	
-	.append-6 {
-		.column-append(6);
-	}
-	
-	.append-7 {
-		.column-append(7);
-	}
-	
-	.append-8 {
-		.column-append(8);
-	}
-	
-	.append-9 {
-		.column-append(9);
-	}
-	
-	.append-10 {
-		.column-append(10);
-	}
-	
-	.append-11 {
-		.column-append(11);
-	}
-	
-	.append-12 {
-		.column-append(12);
-	}
-	
-	.append-13 {
-		.column-append(13);
-	}
-	
-	.append-14 {
-		.column-append(14);
-	}
-	
-	.append-15 {
-		.column-append(15);
-	}
+}
+
+// Function for generating the column width
+.more-column-width(@column) {
+	width: @column * (@grid-width / @grid-columns - @grid-gutter-width) + (@column - 1) * @grid-gutter-width + 0px;
+}
+
+// Function for generating the prefix and suffix margins
+.more-column-prefix(@column) {
+	padding-left: @column * (@grid-width / @grid-columns - @grid-gutter-width) + (@column - 1) * @grid-gutter-width + @grid-gutter-width + 0px;
+}
+
+.more-column-suffix(@column) {
+	padding-right: @column * (@grid-width / @grid-columns - @grid-gutter-width) + (@column - 1) * @grid-gutter-width + @grid-gutter-width + 0px;
+}
+
+// Styles passed over all columns
+.span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16 {
+	float: left;
+	display: inline;
+	margin-left: @grid-gutter-width / 2 + 0px;
+	margin-right: @grid-gutter-width / 2 + 0px;
+}
+
+// Classes for removing the side margins for nested columns
+.alpha {
+	margin-left: 0;
+}
+
+.omega {
+	margin-right: 0;
+}
+
+// Columns
+.span-1 {
+	.more-column-width(1);
+}
+
+.span-2 {
+	.more-column-width(2);
+}
+
+.span-3 {
+	.more-column-width(3);
+}
+
+.span-4 {
+	.more-column-width(4);
+}
+
+.span-5 {
+	.more-column-width(5);
+}
+
+.span-6 {
+	.more-column-width(6);
+}
+
+.span-7 {
+	.more-column-width(7);
+}
+
+.span-8 {
+	.more-column-width(8);
+}
+
+.span-9 {
+	.more-column-width(9);
+}
+
+.span-10 {
+	.more-column-width(10);
+}
+
+.span-11 {
+	.more-column-width(11);
+}
+
+.span-12 {
+	.more-column-width(12);
+}
+
+.span-13 {
+	.more-column-width(13);
+}
+
+.span-14 {
+	.more-column-width(14);
+}
+
+.span-15 {
+	.more-column-width(15);
+}
+
+.span-16 {
+	.more-column-width(16);
+}
+
+// Prefixes
+.prefix-1 {
+	.more-column-prefix(1);
+}
+
+.prefix-2 {
+	.more-column-prefix(2);
+}
+
+.prefix-3 {
+	.more-column-prefix(3);
+}
+
+.prefix-4 {
+	.more-column-prefix(4);
+}
+
+.prefix-5 {
+	.more-column-prefix(5);
+}
+
+.prefix-6 {
+	.more-column-prefix(6);
+}
+
+.prefix-7 {
+	.more-column-prefix(7);
+}
+
+.prefix-8 {
+	.more-column-prefix(8);
+}
+
+.prefix-9 {
+	.more-column-prefix(9);
+}
+
+.prefix-10 {
+	.more-column-prefix(10);
+}
+
+.prefix-11 {
+	.more-column-prefix(11);
+}
+
+.prefix-12 {
+	.more-column-prefix(12);
+}
+
+.prefix-13 {
+	.more-column-prefix(13);
+}
+
+.prefix-14 {
+	.more-column-prefix(14);
+}
+
+.prefix-15 {
+	.more-column-prefix(15);
+}
+
+// Suffixes
+.suffix-1 {
+	.more-column-suffix(1);
+}
+
+.suffix-2 {
+	.more-column-suffix(2);
+}
+
+.suffix-3 {
+	.more-column-suffix(3);
+}
+
+.suffix-4 {
+	.more-column-suffix(4);
+}
+
+.suffix-5 {
+	.more-column-suffix(5);
+}
+
+.suffix-6 {
+	.more-column-suffix(6);
+}
+
+.suffix-7 {
+	.more-column-suffix(7);
+}
+
+.suffix-8 {
+	.more-column-suffix(8);
+}
+
+.suffix-9 {
+	.more-column-suffix(9);
+}
+
+.suffix-10 {
+	.more-column-suffix(10);
+}
+
+.suffix-11 {
+	.more-column-suffix(11);
+}
+
+.suffix-12 {
+	.more-column-suffix(12);
+}
+
+.suffix-13 {
+	.more-column-suffix(13);
+}
+
+.suffix-14 {
+	.more-column-suffix(14);
+}
+
+.suffix-15 {
+	.more-column-suffix(15);
 }
 
 // Clear the container

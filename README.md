@@ -26,9 +26,9 @@ The grid works just like any other, [960](http://960.gs/) for example. And like 
 		
 	</div>
 
-You then place your columns within the container specifying how wide they are, how much to prepend or append with and whether they should be flush with one of the sides.
+You then place your columns within the container specifying how wide they are, how many columns to prefix or suffix with and whether they should be flush with one of the sides.
 
-	<div class='span-4 prepend-1'>
+	<div class='span-4 prefix-1'>
 		<p>This is the parent column.</p>
 		
 		<div class='span-2 alpha'>
@@ -40,7 +40,7 @@ You then place your columns within the container specifying how wide they are, h
 		</div>
 	</div>
 	
-	<div class='span-1 append-2'>
+	<div class='span-1 suffix-2'>
 		<p>This does not need alpha or omega because it is a direct child of the container.</p>
 	</div>
 
