@@ -88,6 +88,12 @@ As well as vendor prefixes more includes a few helpers, one of my favorite ones 
 		#more .circle(50px); // 50px is the size of our circle (width and height)
 	}
 
+If the arguments you are passing to the mixin contain a comma then you will need to run it through the escape function. If you don't LESS will see it as two arguments, and the vendor prefix mixins only take one.
+
+	a:hover {
+		#more .transition(e('color 300ms ease, background 800ms ease'));
+	}
+
 ## Customisation
 
 The beauty of this is that only the helper module depends on the vendor menu, the rest are completely separate. So you can either include all of them via the core file or individual files so you can leave what you don't need. Say you only wanted the grid for example, you would use the following line.
