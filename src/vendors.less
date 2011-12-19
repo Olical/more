@@ -1,12 +1,60 @@
 // These are functions that remove the need for vendor prefixes
 // Use them as mixins and pass all of your arguments within the parentheses, like so
 //     div { #more .border-radius(5px); }
+// If you require a comma in your settings such as #more .transition(color..., background...) you must use the escape function
+//     a:hover { #more .transition(e('color 100ms ease, background 200ms ease-in-out')); }
 
 #more {
+	.box-sizing(@args: none) {
+		-webkit-box-sizing: @args;
+		-moz-box-sizing: @args;
+		box-sizing: @args;
+	}
+	
 	.border-radius(@args: none) {
 		-webkit-border-radius: @args;
 		-moz-border-radius: @args;
 		border-radius: @args;
+	}
+	
+	.border-top-left-radius(@args: none) {
+		-webkit-border-top-left-radius: @args;
+		-moz-border-top-left-radius: @args;
+		border-top-left-radius: @args;
+	}
+	
+	.border-top-right-radius(@args: none) {
+		-webkit-border-top-right-radius: @args;
+		-moz-border-top-right-radius: @args;
+		border-top-right-radius: @args;
+	}
+	
+	.border-bottom-right-radius(@args: none) {
+		-webkit-border-bottom-right-radius: @args;
+		-moz-border-bottom-right-radius: @args;
+		border-bottom-right-radius: @args;
+	}
+	
+	.border-bottom-left-radius(@args: none) {
+		-webkit-border-bottom-left-radius: @args;
+		-moz-border-bottom-left-radius: @args;
+		border-bottom-left-radius: @args;
+	}
+	
+	.transform(@args: none) {
+		-webkit-transform: @args;
+		-moz-transform: @args;
+		-o-transform: @args;
+		-ms-transform: @args;
+		transform: @args;
+	}
+	
+	.transform-origin(@args: none) {
+		-webkit-transform-origin: @args;
+		-moz-transform-origin: @args;
+		-o-transform-origin: @args;
+		-ms-transform-origin: @args;
+		transform-origin: @args;
 	}
 	
 	.box-shadow(@args: none) {
@@ -15,36 +63,224 @@
 		box-shadow: @args;
 	}
 	
+	.background-clip(@args: none) {
+		-webkit-background-clip: @args;
+		-moz-background-clip: @args;
+		background-clip: @args;
+	}
+	
+	.background-origin(@args: none) {
+		-webkit-background-origin: @args;
+		-moz-background-origin: @args;
+		background-origin: @args;
+	}
+	
+	.background-size(@args: none) {
+		-webkit-background-size: @args;
+		-moz-background-size: @args;
+		-o-background-size: @args;
+		background-size: @args;
+	}
+	
+	.column-width(@args: none) {
+		-webkit-column-width: @args;
+		-moz-column-width: @args;
+		column-width: @args;
+	}
+	
 	.column-count(@args: none) {
-		-moz-column-count: @args;
 		-webkit-column-count: @args;
+		-moz-column-count: @args;
 		column-count: @args;
 	}
 	
 	.column-gap(@args: none) {
-		-moz-column-gap: @args;
 		-webkit-column-gap: @args;
+		-moz-column-gap: @args;
 		column-gap: @args;
 	}
 	
-	.box-sizing(@args: none) {
-		-moz-box-sizing: @args;
-		-webkit-box-sizing: @args;
-		box-sizing: @args;
+	.column-rule(@args: none) {
+		-webkit-column-rule: @args;
+		-moz-column-rule: @args;
+		column-rule: @args;
+	}
+	
+	.column-rule-width(@args: none) {
+		-webkit-column-rule-width: @args;
+		-moz-column-rule-width: @args;
+		column-rule-width: @args;
+	}
+	
+	.column-rule-style(@args: none) {
+		-webkit-column-rule-style: @args;
+		-moz-column-rule-style: @args;
+		column-rule-style: @args;
+	}
+	
+	.column-rule-color(@args: none) {
+		-webkit-column-rule-color: @args;
+		-moz-column-rule-color: @args;
+		column-rule-color: @args;
+	}
+	
+	.column-span(@args: none) {
+		-webkit-column-span: @args;
+		-moz-column-span: @args;
+		column-span: @args;
+	}
+	
+	.column-fill(@args: none) {
+		-webkit-column-fill: @args;
+		-moz-column-fill: @args;
+		column-fill: @args;
+	}
+	
+	.columns(@args: none) {
+		-webkit-columns: @args;
+		-moz-columns: @args;
+		columns: @args;
+	}
+	
+	.box-orient(@args: none) {
+		-webkit-box-orient: @args;
+		-moz-box-orient: @args;
+		-ms-box-orient: @args;
+		box-orient: @args;
+	}
+	
+	.box-flex(@args: none) {
+		-webkit-box-flex: @args;
+		-moz-box-flex: @args;
+		-ms-box-flex: @args;
+		box-flex: @args;
+	}
+	
+	.box-align(@args: none) {
+		-webkit-box-align: @args;
+		-moz-box-align: @args;
+		-ms-box-align: @args;
+		box-align: @args;
+	}
+	
+	.box-direction(@args: none) {
+		-webkit-box-direction: @args;
+		-moz-box-direction: @args;
+		-ms-box-direction: @args;
+		box-direction: @args;
+	}
+	
+	.box-flex-group(@args: none) {
+		-webkit-box-flex-group: @args;
+		-moz-box-flex-group: @args;
+		-ms-box-flex-group: @args;
+		box-flex-group: @args;
+	}
+	
+	.box-lines(@args: none) {
+		-webkit-box-lines: @args;
+		-moz-box-lines: @args;
+		-ms-box-lines: @args;
+		box-lines: @args;
+	}
+	
+	.box-ordinal-group(@args: none) {
+		-webkit-box-ordinal-group: @args;
+		-moz-box-ordinal-group: @args;
+		-ms-box-ordinal-group: @args;
+		box-ordinal-group: @args;
+	}
+	
+	.box-pack(@args: none) {
+		-webkit-box-pack: @args;
+		-moz-box-pack: @args;
+		-ms-box-pack: @args;
+		box-pack: @args;
 	}
 	
 	.transition(@args: none) {
 		-webkit-transition: @args;
 		-moz-transition: @args;
 		-o-transition: @args;
+		-ms-transition: @args;
 		transition: @args;
 	}
 	
-	.transform(@args: none) {
-		-moz-transform: @args;
-		-webkit-transform: @args;
-		-ms-transform: @args;
-		transform: @args;
+	.animation(@args: none) {
+		-webkit-animation: @args;
+		-moz-animation: @args;
+		-ms-animation: @args;
+		animation: @args;
+	}
+	
+	.animation-delay(@args: none) {
+		-webkit-animation-delay: @args;
+		-moz-animation-delay: @args;
+		-ms-animation-delay: @args;
+		animation-delay: @args;
+	}
+	
+	.animation-direction(@args: none) {
+		-webkit-animation-direction: @args;
+		-moz-animation-direction: @args;
+		-ms-animation-direction: @args;
+		animation-direction: @args;
+	}
+	
+	.animation-duration(@args: none) {
+		-webkit-animation-duration: @args;
+		-moz-animation-duration: @args;
+		-ms-animation-duration: @args;
+		animation-duration: @args;
+	}
+	
+	.animation-fill-mode(@args: none) {
+		-webkit-animation-fill-mode: @args;
+		-moz-animation-fill-mode: @args;
+		-ms-animation-fill-mode: @args;
+		animation-fill-mode: @args;
+	}
+	
+	.animation-iteration-count(@args: none) {
+		-webkit-animation-iteration-count: @args;
+		-moz-animation-iteration-count: @args;
+		-ms-animation-iteration-count: @args;
+		animation-iteration-count: @args;
+	}
+	
+	.animation-name(@args: none) {
+		-webkit-animation-name: @args;
+		-moz-animation-name: @args;
+		-ms-animation-name: @args;
+		animation-name: @args;
+	}
+	
+	.animation-play-state(@args: none) {
+		-webkit-animation-play-state: @args;
+		-moz-animation-play-state: @args;
+		-ms-animation-play-state: @args;
+		animation-play-state: @args;
+	}
+	
+	.animation-timing-function(@args: none) {
+		-webkit-animation-timing-function: @args;
+		-moz-animation-timing-function: @args;
+		-ms-animation-timing-function: @args;
+		animation-timing-function: @args;
+	}
+	
+	.border-image(@args: none) {
+		-webkit-border-image: @args;
+		-moz-border-image: @args;
+		-o-border-image: @args;
+		border-image: @args;
+	}
+	
+	.hyphens(@args: none) {
+		-webkit-hyphens: @args;
+		-moz-hyphens: @args;
+		-ms-hyphens: @args;
+		hyphens: @args;
 	}
 	
 	// This opacity mixin is also cross browser
