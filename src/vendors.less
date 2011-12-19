@@ -1,6 +1,8 @@
 // These are functions that remove the need for vendor prefixes
 // Use them as mixins and pass all of your arguments within the parentheses, like so
 //     div { #more .border-radius(5px); }
+// If you require a comma in your settings such as #more .transition(color..., background...) you must use the escape function
+//     a:hover { #more .transition(e('color 100ms ease, background 200ms ease-in-out')); }
 
 #more {
 	.box-sizing(@args: none) {
