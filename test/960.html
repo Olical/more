@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>960 grid - Comparison</title>
+		<link rel='stylesheet' type='text/css' href='960.css'>
+		<style type='text/css'>
+			.container_16 {
+				background-color: #CCCCCC;
+			}
+			
+			.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12, .grid_13, .grid_14, .grid_15, .grid_16 {
+				background-color: rgba(100, 100, 100, 0.2);
+				color: #FFFFFF;
+				border-bottom: 1px solid #666666;
+			}
+			
+			p {
+				text-align: center;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class='container_16'>
+			<!-- Basic grid -->
+			<div class='grid_1'><p>One</p></div>
+			<div class='grid_1'><p>One</p></div>
+			<div class='grid_1'><p>One</p></div>
+			<div class='grid_1'><p>One</p></div>
+			<div class='grid_1'><p>One</p></div>
+			<div class='grid_1'><p>One</p></div>
+			<div class='grid_1'><p>One</p></div>
+			<div class='grid_1'><p>One</p></div>
+			<div class='grid_1'><p>One</p></div>
+			<div class='grid_1'><p>One</p></div>
+			<div class='grid_1'><p>One</p></div>
+			<div class='grid_1'><p>One</p></div>
+			<div class='grid_1'><p>One</p></div>
+			<div class='grid_1'><p>One</p></div>
+			<div class='grid_1'><p>One</p></div>
+			<div class='grid_1'><p>One</p></div>
+			
+			<div class='grid_2'><p>Two</p></div>
+			<div class='grid_2'><p>Two</p></div>
+			<div class='grid_2'><p>Two</p></div>
+			<div class='grid_2'><p>Two</p></div>
+			<div class='grid_2'><p>Two</p></div>
+			<div class='grid_2'><p>Two</p></div>
+			<div class='grid_2'><p>Two</p></div>
+			<div class='grid_2'><p>Two</p></div>
+			
+			<div class='grid_3'><p>Three</p></div>
+			<div class='grid_3'><p>Three</p></div>
+			<div class='grid_3'><p>Three</p></div>
+			<div class='grid_3'><p>Three</p></div>
+			<div class='grid_3'><p>Three</p></div>
+			<div class='grid_1'><p>One</p></div>
+			
+			<div class='grid_4'><p>Four</p></div>
+			<div class='grid_4'><p>Four</p></div>
+			<div class='grid_4'><p>Four</p></div>
+			<div class='grid_4'><p>Four</p></div>
+			
+			<div class='grid_1'><p>One</p></div>
+			<div class='grid_5'><p>Five</p></div>
+			<div class='grid_5'><p>Five</p></div>
+			<div class='grid_5'><p>Five</p></div>
+			
+			<div class='grid_6'><p>Six</p></div>
+			<div class='grid_4'><p>Four</p></div>
+			<div class='grid_6'><p>Six</p></div>
+			
+			<div class='grid_7'><p>Seven</p></div>
+			<div class='grid_2'><p>Two</p></div>
+			<div class='grid_7'><p>Seven</p></div>
+			
+			<div class='grid_8'><p>Eight</p></div>
+			<div class='grid_8'><p>Eight</p></div>
+			
+			<div class='grid_9'><p>Nine</p></div>
+			<div class='grid_7'><p>Seven</p></div>
+			
+			<div class='grid_3'><p>Three</p></div>
+			<div class='grid_3'><p>Three</p></div>
+			<div class='grid_10'><p>Ten</p></div>
+			
+			<div class='grid_11'><p>Eleven</p></div>
+			<div class='grid_5'><p>Five</p></div>
+			
+			<div class='grid_12'><p>Twelve</p></div>
+			<div class='grid_4'><p>Four</p></div>
+			
+			<div class='grid_13'><p>Thirteen</p></div>
+			<div class='grid_3'><p>Three</p></div>
+			
+			<div class='grid_14'><p>Fourteen</p></div>
+			<div class='grid_2'><p>Two</p></div>
+			
+			<div class='grid_15'><p>Fifteen</p></div>
+			<div class='grid_1'><p>One</p></div>
+			
+			<div class='grid_16'><p>Sixteen</p></div>
+			
+			<!-- Nesting -->
+			<div class='grid_16'>
+				<p>Sixteen - parent</p>
+				
+				<div class='grid_8 alpha'><p>Eight - alpha</p></div>
+				<div class='grid_8 omega'>
+					<p>Eight - omega and parent</p>
+					
+					<div class='grid_3 alpha suffix_2'><p>Three - alpha and siffixed with two</p></div>
+					<div class='grid_3 omega'><p>Three - omega</p></div>
+					
+					<br class='clear' />
+					
+					<div class='grid_3 alpha'><p>Three - alpha</p></div>
+					<div class='grid_3 omega prefix_2'><p>Three - omega and prefixed with two</p></div>
+				</div>
+			</div>
+			
+			<!-- Suffixing and prefixing -->
+			<div class='grid_5 suffix_6'><p>Five - suffixed with six</p></div>
+			<div class='grid_5'><p>Five</p></div>
+		</div>
+		
+		<script type='text/javascript' src='less.min.js'></script>
+	</body>
+</html>
