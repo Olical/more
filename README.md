@@ -1,8 +1,6 @@
 # more
 
-More is a framework for [LESS](http://lesscss.org/), which is a dynamic stylesheet language that builds on CSS. More contains bucket loads of useful code to provide things such as normalisation and a adjustable grid system.
-
-The normalisation is provided by [normalize.css](https://github.com/necolas/normalize.css). An amazing stylesheet. I admire the developers behind it.
+More is a framework for [LESS](http://lesscss.org/), which is a dynamic stylesheet language that builds on CSS. More contains an adjustable grid system as well as other useful features.
 
 The clear fix is from [Skeleton](https://github.com/dhgamache/Skeleton), an amazing responsive grid system.
 
@@ -52,8 +50,6 @@ Now this is my favorite thing about more's grid, you can customise it however yo
 
 Just after you include more, you can specify three variables as configuration. Here they are with their default values, so if you don't set them it will be as if you wrote this.
 
-	@import 'more/more';
-	
 	@grid-columns: 16;
 	@grid-gutter-width: 20;
 	@grid-width: 960;
